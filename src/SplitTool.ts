@@ -15,9 +15,9 @@ class SplitTool {
   private sourcePath = path.join(__dirname, "../source");
   private outputPath = path.join(__dirname, "../output");
 
-  constructor(props: SplitToolConstructorProps) {
-    props.sourcePath && (this.sourcePath = props.sourcePath);
-    props.outputPath && (this.outputPath = props.outputPath);
+  constructor(props?: SplitToolConstructorProps) {
+    props?.sourcePath && (this.sourcePath = props.sourcePath);
+    props?.outputPath && (this.outputPath = props.outputPath);
   }
 
   /**
