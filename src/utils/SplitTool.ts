@@ -4,7 +4,7 @@ import fs from "fs";
 import fse from "fs-extra";
 import plist from "plist";
 import images from "images";
-import { Plist } from "./types";
+import { Plist } from "../types";
 
 interface SplitToolConstructorProps {
   sourcePath?: string;
@@ -12,8 +12,8 @@ interface SplitToolConstructorProps {
 }
 
 class SplitTool {
-  private sourcePath = path.join(__dirname, "../source");
-  private outputPath = path.join(__dirname, "../output");
+  private sourcePath = path.join(__dirname, "../../source");
+  private outputPath = path.join(__dirname, "../../output");
 
   constructor(props?: SplitToolConstructorProps) {
     props?.sourcePath && (this.sourcePath = props.sourcePath);
